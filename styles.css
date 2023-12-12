@@ -1,0 +1,401 @@
+* {
+    font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+}
+
+/* header */
+
+.header {
+    background-color: #FF7F99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0;
+}
+
+.menu {
+    width: 30%;
+}
+
+.contain-menu {
+    width: 70%;
+    display: flex;
+    color: white;
+    font-size: 24px;
+    text-align: end;
+    justify-content: space-between;
+    padding-left: 30px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50px; /* Bordes redondeados */
+}
+
+.header-text {
+    color:white;
+    font-size: 24pt;
+}
+
+.button-header { 
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+    padding: 0px 30px;
+    border: 1px solid #ffca41;
+    background-color: #ff9183; /*duda opacidad*/
+    border-radius:50px;
+    text-decoration: none;
+}
+
+.image-logo {
+    justify-content: right;
+}
+
+
+
+/* section-1 */
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 50px 190px;
+}
+
+/* left */
+
+.left {
+    width: 30%;
+}
+
+.shape {
+    width: 300px; 
+    height: 300px; 
+    background: #ff7f99;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.couple-image {
+    width: 125px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.right {
+    width: 70%;
+    margin-left: 50px;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #CC3366;
+    font-size: 100px;
+    text-align: left;
+    line-height: 70px;
+}
+
+.subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color:black;
+    text-align: left;
+}
+
+.cta-teLlamamos {
+    width: 40%;
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+    padding: 0px 30px;
+    border: 1px solid #ffca41;
+    background-color: #ffca41;
+    border-radius: 50px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: row;
+}
+
+/* section-2 */
+
+.section-2 {
+    background-color: #FF7F99;
+    padding: 60px 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.item-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-photo {
+    border-radius: 50%; 
+    align-content: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.profile-text {
+    color:white;
+    align-content: center;
+    font-size: 120%;
+}  
+
+.profile-text-2 {
+    align-content: center;
+    color: black;} 
+
+
+
+/* profile-coders */
+
+/* section-1 */
+
+/* left */
+.section-1-coder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 50px 190px;
+}
+
+.shape-coder {
+    width: 300px; 
+    height: 300px; 
+    background: #ff7f99;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile-photo-personal {
+    z-index: 1;
+    border-radius: 50%; 
+    width: 270px; 
+    height: 270px;
+    margin-top: 20px;
+}  
+    
+
+
+ /* right */
+
+.right-profile-coder {
+    color: #000;
+    text-align: justify;
+    font-size: 160%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 137.5% */
+    letter-spacing: -0.48px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;}
+
+.cta-teLlamamos-coder {
+    width: 50%;
+    color: white;
+    font-size: 28px;  
+    padding: 0px 30px;
+    border: 1px solid #ffca41;
+    background-color: #ffca41;
+    border-radius: 50px;
+    align-self: center;
+} 
+
+a {
+     text-decoration: none;}    
+        
+        
+        @media only screen and (max-width: 768px) {
+        
+        /* header */
+
+            header {
+               flex-direction: column; 
+            }
+
+            header img {
+                max-width: 100%;
+            }
+
+            .menu {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .contain-menu {
+                width: 100%;
+                padding-left: 0;
+                flex-direction: column;
+            }
+
+            .contain-menu p {
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
+            .contain-menu a {
+                margin-bottom: 20px;
+            }
+            
+        /* section-1 */
+
+            .section-1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 100px;
+            }
+
+            .left {
+                width: 100%;
+            }
+
+            h1 { 
+                font-size: 200%;
+            }
+
+            .shape {
+                margin: auto;
+            }
+        
+            .right {
+                width: 100%;
+                margin: 0; 
+                margin-bottom: 50px;
+                text-align: center; 
+                order: -1; 
+            }
+
+            .title, .subtitle {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 90px;
+            }
+
+            .cta-teLlamamos {
+                width: 60%;
+                color: white;
+                font-size: 200%;
+                padding: 0px 30px;
+                border: 1px solid #ffca41;
+                background-color: #ffca41;
+                border-radius: 50px;
+            }   
+
+        /* section-2 */
+
+            .section-2 {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+            } 
+            
+            .item {
+                margin-left: 200px; 
+                width: 90%; 
+            }
+            
+            .item-img {
+                width: 60%;
+                align-content: center;
+            }
+
+            .item-logo {
+                align-content: center;
+            }
+
+            .profile-logo {
+                width: 30%;
+
+            }
+            .profile-photo {
+                max-width: 100%; 
+            }
+        
+            .profile-text {
+                font-size: 200%; 
+            }
+
+            .profile-text-2 {
+                font-size: 140%;
+            }
+           
+            
+
+
+        /* responsive coder */
+
+            .section-1-coder {
+                flex-direction: column-reverse; 
+            }
+            
+            .profile-photo-personal,
+            .shape-coder,
+            .right-profile-coder {
+                margin: 10px; 
+                align-content: center;
+            }
+        
+            .cta-teLlamamos-coder {
+                margin-left: 0; 
+            }
+            
+            .cta {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .profile-logo {
+                align-items: center;
+            }
+        }
+        
+
+
+
+
+    
